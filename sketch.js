@@ -1,6 +1,13 @@
 var i;
 var y;
 let ragged = [];
+
+var xOne;
+var xTwo;
+var xThree;
+var xFour;
+var xFive;
+
 var yOne;
 var yTwo;
 var yThree;
