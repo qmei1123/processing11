@@ -11,7 +11,7 @@ function setup() {
     createCanvas(1600, 1200);
     background(0);
     ragged = new Ragged();
-    noLoop();
+    frameRate(.75);
 }
         
 class Ragged {
@@ -47,23 +47,19 @@ class Ragged {
 function draw() {
     for (i = 0; i < width; i += 100) {
         for (y = 0; y < height; y += 100) {
-            xOne = random(50);
-            xTwo = random(55, 100);
-            xThree = random(110, 170);
-            xFour = random(-50);
-            xFive = random(-55, -100);
+            xOne = random(60);
+            xTwo = random(50, 110);
+            xThree = random(90, 180);
+            xFour = random(-60);
+            xFive = random(-50, -110);
             
-            yOne = random(30);
-            yTwo = random(50, 90);
-            yThree = random(140, 180);
-            yFour = random(-30, -1);
-            yFive = random(-80, -31);
+            yOne = random(50);
+            yTwo = random(40, 100);
+            yThree = random(120, 190);
+            yFour = random(-40, -1);
+            yFive = random(-90, -30);
             ragged.show();
         }
     }
 }
 
-function mousePressed() {
-  redraw(); 
-}
-    
