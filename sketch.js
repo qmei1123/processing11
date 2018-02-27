@@ -1,3 +1,4 @@
+var canvas;
 var i;
 var y;
 let ragged = [];
@@ -15,7 +16,7 @@ var yFour;
 var yFive;
 
 function setup() {
-    createCanvas(1600, 1200);
+    createCanvas(window.innerWidth, window.innerHeight);
     background(0);
     ragged = new Ragged();
     frameRate(.75);
